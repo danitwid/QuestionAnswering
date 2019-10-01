@@ -1,0 +1,29 @@
+[09.29.19 07:54:19] Args: {
+    "attention_type": "BiDAF",
+    "batch_size": 16,
+    "char_emb_file": "./data/char_emb.json",
+    "dev_eval_file": "./data/dev_eval.json",
+    "dev_record_file": "./data/dev.npz",
+    "hidden_size": 100,
+    "load_path": ".\\save\\train\\BiDAF-10\\best.pth.tar",
+    "max_ans_len": 15,
+    "name": "BiDAF",
+    "num_visuals": 10,
+    "num_workers": 4,
+    "save_dir": "./save/test\\BiDAF-04",
+    "split": "dev",
+    "sub_file": "submission.csv",
+    "test_eval_file": "./data/test_eval.json",
+    "test_record_file": "./data/test.npz",
+    "train_eval_file": "./data/train_eval.json",
+    "train_record_file": "./data/train.npz",
+    "use_squad_v2": false,
+    "word_emb_file": "./data/word_emb.json"
+}
+[09.29.19 07:54:20] Loading embeddings...
+[09.29.19 07:54:27] Building model...
+[09.29.19 07:54:34] Loading checkpoint from .\save\train\BiDAF-10\best.pth.tar...
+[09.29.19 07:54:35] Building dataset...
+[09.29.19 07:54:35] Evaluating on dev split...
+[09.29.19 07:54:56] Dev NLL: 02.78, F1: 78.56, EM: 68.57
+[09.29.19 07:54:57] Writing submission file to ./save/test\BiDAF-04\dev_submission.csv...

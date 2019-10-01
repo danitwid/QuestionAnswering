@@ -1,0 +1,29 @@
+[09.27.19 17:20:33] Args: {
+    "attention_type": "DotProduct",
+    "batch_size": 16,
+    "char_emb_file": "./data/char_emb.json",
+    "dev_eval_file": "./data/dev_eval.json",
+    "dev_record_file": "./data/dev.npz",
+    "hidden_size": 100,
+    "load_path": ".\\save\\train\\DotProduct-02\\best.pth.tar",
+    "max_ans_len": 15,
+    "name": "DotProduct",
+    "num_visuals": 10,
+    "num_workers": 4,
+    "save_dir": "./save/test\\DotProduct-03",
+    "split": "dev",
+    "sub_file": "submission.csv",
+    "test_eval_file": "./data/test_eval.json",
+    "test_record_file": "./data/test.npz",
+    "train_eval_file": "./data/train_eval.json",
+    "train_record_file": "./data/train.npz",
+    "use_squad_v2": false,
+    "word_emb_file": "./data/word_emb.json"
+}
+[09.27.19 17:20:34] Loading embeddings...
+[09.27.19 17:20:41] Building model...
+[09.27.19 17:20:50] Loading checkpoint from .\save\train\DotProduct-02\best.pth.tar...
+[09.27.19 17:20:50] Building dataset...
+[09.27.19 17:20:51] Evaluating on dev split...
+[09.27.19 17:21:06] Dev NLL: 03.00, F1: 75.00, EM: 65.31
+[09.27.19 17:21:07] Writing submission file to ./save/test\DotProduct-03\dev_submission.csv...

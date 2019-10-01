@@ -1,0 +1,29 @@
+[10.01.19 15:53:51] Args: {
+    "attention_type": "Bilinear",
+    "batch_size": 16,
+    "char_emb_file": "./data/char_emb.json",
+    "dev_eval_file": "./data/dev_eval.json",
+    "dev_record_file": "./data/dev.npz",
+    "hidden_size": 100,
+    "load_path": ".\\save\\train\\Bilinear-03\\best.pth.tar",
+    "max_ans_len": 15,
+    "name": "Bilinear",
+    "num_visuals": 10,
+    "num_workers": 4,
+    "save_dir": "./save/test\\Bilinear-06",
+    "split": "dev",
+    "sub_file": "submission.csv",
+    "test_eval_file": "./data/test_eval.json",
+    "test_record_file": "./data/test.npz",
+    "train_eval_file": "./data/train_eval.json",
+    "train_record_file": "./data/train.npz",
+    "use_squad_v2": false,
+    "word_emb_file": "./data/word_emb.json"
+}
+[10.01.19 15:53:52] Loading embeddings...
+[10.01.19 15:53:59] Building model...
+[10.01.19 15:54:08] Loading checkpoint from .\save\train\Bilinear-03\best.pth.tar...
+[10.01.19 15:54:08] Building dataset...
+[10.01.19 15:54:09] Evaluating on dev split...
+[10.01.19 15:54:23] Dev NLL: 02.95, F1: 76.28, EM: 66.33
+[10.01.19 15:54:24] Writing submission file to ./save/test\Bilinear-06\dev_submission.csv...
